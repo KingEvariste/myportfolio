@@ -205,3 +205,10 @@ body{
 .item9{
   animation-delay: -27s;
 }
+
+.NC{
+  font-size: 30px;
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
