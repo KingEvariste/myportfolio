@@ -93,11 +93,12 @@ body{
   justify-content: center;
 }
 
-#location,#clock{
-  width: 2rem;
+#location{
+  width: 1.5rem;
 }
 
 #clock{
+  width: 1.25rem;
   margin-left: 0.2vw;
   margin-right: -0.2vw;
 }
@@ -143,7 +144,7 @@ body{
   display: flex;
   align-items: center;
   width: 80%;
-  height: 8rem;
+  height: 7rem;
   margin: 0 auto;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
@@ -166,13 +167,16 @@ body{
 
 .item{
   position: absolute;
-  height: 5.5rem;
-  width: 5.5rem;
+  height: 4rem;
+  width: 4rem;
   left: max(calc(5.5rem * 10), 100%);
   animation-name: scrollleft;
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  transition: width 0.2s,
+              height 0.2s;
+  cursor: pointer;
 }
 
 .item0{
@@ -211,4 +215,11 @@ body{
   text-align: center;
   width: 500px;
   margin: auto;
+}
+
+.item:hover{
+  margin-right: 3rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: 2rem 0;
 }
